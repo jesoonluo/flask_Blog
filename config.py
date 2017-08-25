@@ -8,3 +8,5 @@ class ProdConfig(Config):
 
 class DevConfig(Config):
 	DEBUG = True
+	SQLALCHEMY_ECHO = True
+	SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:mysql@localhost:3306/test'
